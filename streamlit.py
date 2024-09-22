@@ -101,26 +101,7 @@ st.plotly_chart(fig_bar)
 
 # ---------------------------------------------------- Row 4 ------------------------------
 
-st.write("### 3: Bagaimana Persebaran Total Penjualan dalam Hari maupun Jam Tertentu?")
-
-# A. Persiapan Data
-heatmap = df.groupby(['Day of Week', "Hour"])['Total'].sum().reset_index()
-
-# B. Visualisasi
-fig_heatmap = px.density_heatmap(heatmap,
-                   x="Day of Week",
-                   y="Hour",
-                   z="Total",
-                   title="Distribution of Total Transaction Value in Every Hour and Day",
-                   color_continuous_scale='rdbu',
-                   nbinsy=len(df['Hour'].unique()))
-
-st.plotly_chart(fig_heatmap)
-
-
-# ---------------------------------------------------- Row 5 ------------------------------
-
-st.write("### 4: Bagaimana Perbandingan Gender Pembeli di Setiap Product Line?")
+st.write("### 3: Bagaimana Perbandingan Gender Pembeli di Setiap Product Line?")
 
 # A. Persiapan Data
 gen_cus = pd.crosstab(index=df['Product line'],
