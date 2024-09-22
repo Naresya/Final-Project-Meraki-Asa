@@ -24,7 +24,7 @@ df = pd.read_pickle("data_sales_dash.pkl")
 with st.sidebar:
     #Menambahkan logo pribadi
     st.write("Hi!")
-    st.image("asset/data-science.png")
+    st.image("data-science.png")
     st.write("""
              Saya Naresya Wijaya mempersembahkan Dashboard Analisis Penjualan Supermarket, sebuah alat yang memudahkan dalam analisis data perusahaan dengan visualisasi yang mendalam dan interaktif. Mari menemukan berbagai insight dari perusahaan kami.
              """)
