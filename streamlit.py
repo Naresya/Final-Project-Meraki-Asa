@@ -139,4 +139,4 @@ fig_stack = px.bar(pro_cus_melt,
                    title="Comparison of Male and Female Buyers in Each Product Line",
                    color="Gender")
 
-st.plotly_chart(fig_stack)
+st.plotly_chart(fig_stack, use_container_width=True)
