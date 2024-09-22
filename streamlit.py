@@ -24,18 +24,17 @@ df = pd.read_pickle("data_sales_dash.pkl")
 with st.sidebar:
     #Menambahkan logo pribadi
     st.write("Hi!")
-    st.image("data-science.png")
+    st.image("asset/data-science.png")
     st.write("""
-             Saya Naresya Wijaya mempersembahkan Dashboard Analisis Penjualan Supermarket, sebuah alat yang memudahkan dalam analisis data perusahaan dengan visualisasiyang mendalam dan interaktif. Mari menemukan berbagai insight dari perusahaan kami.
+             Saya Naresya Wijaya mempersembahkan Dashboard Analisis Penjualan Supermarket, sebuah alat yang memudahkan dalam analisis data perusahaan dengan visualisasi yang mendalam dan interaktif. Mari menemukan berbagai insight dari perusahaan kami.
              """)
     st.caption('Copyright © Naresya Wijaya 2024')
 
-# -------------------------------------- Row 1 ------------------------------
+# ---------------------------------------------------- Row 1 ------------------------------
 st.write('# Dashboard Analisis Penjualan Supermarket')
 st.write("""Analisis ini menggunakan bahasa pemrograman Python dan visualisasi interaktif (Plotly Express). 
          Data yang digunakan adalah data penjualan supermarket yang diperoleh dari 
-         https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales.
-         """)
+         https://www.kaggle.com/datasets/aungpyaeap/supermarket-sales.""")
 with st.expander("Klik untuk melihat detail dataset!"):
     st.write("Data Penjualan Supermarket", df)
 
